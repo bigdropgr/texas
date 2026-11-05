@@ -48,3 +48,7 @@ wp cache flush --path=/var/www/texas.gr/public_html
 
 - Άνοιξε `/ergaleia/ypologismos-chronou-psisimatos/` και `/ergaleia/diastasiologisi-smoker/` — οι υπολογιστές πρέπει να φαίνονται και να υπολογίζουν.
 - Το υπόλοιπο site δεν πρέπει να φορτώνει τα assets των plugin (έλεγξε στα devtools ότι τα `calculator.css/js` υπάρχουν μόνο σε αυτές τις σελίδες).
+
+## Προσοχή: το θέμα "texas" στο wp.org
+
+Υπάρχει εμπορικό θέμα "Texas" της CooThemes στο wp.org με το ίδιο slug. **Μην πατάς ποτέ "Update" για το θέμα texas στο wp-admin** — θα αντικαταστήσει το δικό μας θέμα με του CooThemes. Αν το wp-admin δείχνει update για το texas, αγνόησέ το και ξανατρέξε το `deploy.sh`.

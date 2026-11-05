@@ -19,6 +19,6 @@ rm -rf "$WP_PATH/wp-content/plugins/texas-cook-calc" "$WP_PATH/wp-content/plugin
 cp -r "$SRC/wp-content/plugins/texas-cook-calc" "$WP_PATH/wp-content/plugins/texas-cook-calc"
 cp -r "$SRC/wp-content/plugins/texas-smoker-builder" "$WP_PATH/wp-content/plugins/texas-smoker-builder"
 
-cp "$SRC/wp-content/mu-plugins/texas-core.php" "$WP_PATH/wp-content/mu-plugins/texas-core.php"
+cp "$SRC"/wp-content/mu-plugins/*.php "$WP_PATH/wp-content/mu-plugins/"
 
 echo "Ολοκληρώθηκε: θέμα + plugins αντιγράφηκαν στο $WP_PATH/wp-content"

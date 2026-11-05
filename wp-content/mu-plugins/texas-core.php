@@ -50,7 +50,7 @@ function texas_core_register_post_types() {
 				'singular_name' => $args['singular_name'],
 			),
 			'public'        => true,
-			'has_archive'   => true,
+			'has_archive'   => false,
 			'rewrite'       => array( 'slug' => $args['slug'], 'with_front' => false ),
 			'menu_icon'     => $args['menu_icon'],
 			'show_in_rest'  => true,

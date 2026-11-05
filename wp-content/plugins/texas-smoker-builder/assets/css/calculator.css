@@ -1,0 +1,114 @@
+.txs-calc {
+	max-width: 720px;
+}
+
+.txs-form {
+	display: flex;
+	flex-direction: column;
+	gap: var(--texas-space-5, 24px);
+	background: var(--texas-surface, #211c17);
+	border: 1px solid var(--texas-border, #3a3128);
+	border-radius: var(--texas-radius-m, 12px);
+	padding: var(--texas-space-5, 24px);
+}
+
+.txs-group {
+	border: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	gap: var(--texas-space-4, 16px);
+}
+
+.txs-group legend {
+	font-weight: 600;
+	font-size: 1.05rem;
+	padding: 0;
+	margin-bottom: var(--texas-space-2, 8px);
+}
+
+.txs-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: var(--texas-space-4, 16px);
+}
+
+@media (max-width: 720px) {
+	.txs-grid {
+		grid-template-columns: 1fr;
+	}
+}
+
+.txs-field {
+	display: flex;
+	flex-direction: column;
+	gap: var(--texas-space-2, 8px);
+}
+
+.txs-field label {
+	font-size: 0.9rem;
+	color: var(--texas-text-muted, #b8ad9e);
+}
+
+.txs-field input,
+.txs-field select {
+	width: 100%;
+	background: var(--texas-surface-2, #2b241d);
+	border: 1px solid var(--texas-border, #3a3128);
+	border-radius: var(--texas-radius-s, 6px);
+	color: var(--texas-text, #f2ede6);
+	padding: var(--texas-space-3, 12px);
+	font: inherit;
+	font-variant-numeric: tabular-nums;
+}
+
+.txs-field input:focus,
+.txs-field select:focus {
+	border-color: var(--texas-accent, #e2622b);
+	outline: none;
+}
+
+.txs-error {
+	color: var(--texas-danger, #d95f4b);
+	margin: 0;
+}
+
+.txs-result {
+	margin-top: var(--texas-space-5, 24px);
+	background: var(--texas-surface-2, #2b241d);
+	border: 1px solid var(--texas-border, #3a3128);
+	border-left: 4px solid var(--texas-accent, #e2622b);
+	border-radius: var(--texas-radius-m, 12px);
+	padding: var(--texas-space-5, 24px);
+}
+
+.txs-table th {
+	color: var(--texas-text-muted, #b8ad9e);
+	font-weight: 500;
+	width: 55%;
+}
+
+.txs-table td {
+	font-weight: 600;
+	font-variant-numeric: tabular-nums;
+}
+
+.txs-badge-warn {
+	color: var(--texas-warn, #e0a458);
+	font-weight: 600;
+}
+
+.txs-badge-ok {
+	color: var(--texas-ok, #7fb069);
+}
+
+.txs-disclaimer {
+	margin: var(--texas-space-4, 16px) 0 0;
+	font-size: 0.875rem;
+	color: var(--texas-text-muted, #b8ad9e);
+}
+
+.txs-noscript {
+	color: var(--texas-warn, #e0a458);
+}

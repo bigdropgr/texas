@@ -12,8 +12,8 @@ SRC="$(cd "$(dirname "$0")" && pwd)"
 
 mkdir -p "$WP_PATH/wp-content/themes" "$WP_PATH/wp-content/plugins" "$WP_PATH/wp-content/mu-plugins"
 
-rm -rf "$WP_PATH/wp-content/themes/texas"
-cp -r "$SRC/wp-content/themes/texas" "$WP_PATH/wp-content/themes/texas"
+rm -rf "$WP_PATH/wp-content/themes/bigdrop-texas"
+cp -r "$SRC/wp-content/themes/bigdrop-texas" "$WP_PATH/wp-content/themes/bigdrop-texas"
 
 rm -rf "$WP_PATH/wp-content/plugins/texas-cook-calc" "$WP_PATH/wp-content/plugins/texas-smoker-builder"
 cp -r "$SRC/wp-content/plugins/texas-cook-calc" "$WP_PATH/wp-content/plugins/texas-cook-calc"

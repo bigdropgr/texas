@@ -6,7 +6,7 @@ Custom θέμα WordPress (`texas`) και δύο αυτόνομα plugin υπο
 
 ```
 wp-content/
-├── themes/texas/                  # κλασικό θέμα PHP, χωρίς page builder, χωρίς jQuery
+├── themes/bigdrop-texas/                  # κλασικό θέμα PHP, χωρίς page builder, χωρίς jQuery
 │   ├── style.css / functions.php
 │   ├── inc/                       # setup, enqueue, template-tags, footer fallback
 │   ├── template-parts/            # content-single, content-syntagi, content-psimo, content-leksiko, content-exoplismos
@@ -21,7 +21,7 @@ wp-content/
 
 ## Εγκατάσταση
 
-1. Ανέβασε τα `wp-content/themes/texas`, `wp-content/mu-plugins/texas-core.php` και τα δύο plugins στον server (π.χ. μέσω του `deploy.sh`).
+1. Ανέβασε τα `wp-content/themes/bigdrop-texas`, `wp-content/mu-plugins/texas-core.php` και τα δύο plugins στον server (π.χ. μέσω του `deploy.sh`).
 2. Ενεργοποίησε το θέμα **texas**.
 3. Τα mu-plugins φορτώνουν αυτόματα.
 4. Ενεργοποίησε τα plugin **texas-cook-calc** και **texas-smoker-builder**.

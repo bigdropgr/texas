@@ -18,7 +18,7 @@ bash deploy.sh /var/www/texas.gr/public_html
 ```
 
 Το script αντιγράφει μόνο:
-- `wp-content/themes/texas`
+- `wp-content/themes/bigdrop-texas`
 - `wp-content/plugins/texas-cook-calc`
 - `wp-content/plugins/texas-smoker-builder`
 - `wp-content/mu-plugins/texas-core.php` (φορτώνει αυτόματα)
@@ -26,7 +26,7 @@ bash deploy.sh /var/www/texas.gr/public_html
 ## 3. Ενεργοποίηση (με WP-CLI αν υπάρχει)
 
 ```bash
-wp theme activate texas --path=/var/www/texas.gr/public_html
+wp theme activate bigdrop-texas --path=/var/www/texas.gr/public_html
 wp plugin activate texas-cook-calc texas-smoker-builder --path=/var/www/texas.gr/public_html
 wp rewrite structure '/%postname%/' --hard --path=/var/www/texas.gr/public_html
 wp cache flush --path=/var/www/texas.gr/public_html
@@ -51,4 +51,4 @@ wp cache flush --path=/var/www/texas.gr/public_html
 
 ## Προσοχή: το θέμα "texas" στο wp.org
 
-Υπάρχει εμπορικό θέμα "Texas" της CooThemes στο wp.org με το ίδιο slug. **Μην πατάς ποτέ "Update" για το θέμα texas στο wp-admin** — θα αντικαταστήσει το δικό μας θέμα με του CooThemes. Αν το wp-admin δείχνει update για το texas, αγνόησέ το και ξανατρέξε το `deploy.sh`.
+Υπήρχε εμπορικό θέμα "Texas" της CooThemes στο wp.org με το ίδιο slug (`texas`). Για να μην ξαναγίνει σύγκρουση/update, το θέμα μας έχει πλέον φάκελο και slug **`bigdrop-texas`** (όνομα: **Texas by BigDrop.gr**). Ενεργοποίησέ το με `wp theme activate bigdrop-texas`. Αν στο wp-admin υπάρχει ακόμα θέμα με slug `texas` (CooThemes), σβήσε το: `wp theme delete texas`. Μην πατάς "Update" σε κανένα θέμα με όνομα Texas.

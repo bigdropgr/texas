@@ -21,4 +21,15 @@ cp -r "$SRC/wp-content/plugins/texas-smoker-builder" "$WP_PATH/wp-content/plugin
 
 cp -r "$SRC"/wp-content/mu-plugins/. "$WP_PATH/wp-content/mu-plugins/"
 
+find "$WP_PATH/wp-content/themes/bigdrop-texas" \
+	"$WP_PATH/wp-content/plugins/texas-cook-calc" \
+	"$WP_PATH/wp-content/plugins/texas-smoker-builder" \
+	"$WP_PATH/wp-content/mu-plugins" \
+	-type d -exec chmod 755 {} + 2>/dev/null || true
+find "$WP_PATH/wp-content/themes/bigdrop-texas" \
+	"$WP_PATH/wp-content/plugins/texas-cook-calc" \
+	"$WP_PATH/wp-content/plugins/texas-smoker-builder" \
+	"$WP_PATH/wp-content/mu-plugins" \
+	-type f -exec chmod 644 {} + 2>/dev/null || true
+
 echo "Ολοκληρώθηκε: θέμα + plugins αντιγράφηκαν στο $WP_PATH/wp-content"

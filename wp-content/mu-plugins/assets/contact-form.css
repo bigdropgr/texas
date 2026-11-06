@@ -1,0 +1,63 @@
+.txcf {
+	max-width: 720px;
+}
+
+.txcf-form {
+	display: flex;
+	flex-direction: column;
+	gap: var(--texas-space-4, 16px);
+	background: var(--texas-surface, #211c17);
+	border: 1px solid var(--texas-border, #3a3128);
+	border-radius: var(--texas-radius-m, 12px);
+	padding: var(--texas-space-5, 24px);
+}
+
+.txcf-field {
+	display: flex;
+	flex-direction: column;
+	gap: var(--texas-space-2, 8px);
+}
+
+.txcf-field label {
+	font-size: 0.9rem;
+	color: var(--texas-text-muted, #b8ad9e);
+}
+
+.txcf-field input,
+.txcf-field textarea {
+	width: 100%;
+	background: var(--texas-surface-2, #2b241d);
+	border: 1px solid var(--texas-border, #3a3128);
+	border-radius: var(--texas-radius-s, 6px);
+	color: var(--texas-text, #f2ede6);
+	padding: var(--texas-space-3, 12px);
+	font: inherit;
+}
+
+.txcf-field input:focus,
+.txcf-field textarea:focus {
+	border-color: var(--texas-accent, #e2622b);
+	outline: none;
+}
+
+.txcf-honeypot {
+	position: absolute;
+	left: -9999px;
+	height: 0;
+	overflow: hidden;
+}
+
+.txcf-status {
+	padding: var(--texas-space-3, 12px) var(--texas-space-4, 16px);
+	border-radius: var(--texas-radius-s, 6px);
+}
+
+.txcf-success {
+	color: var(--texas-ok, #7fb069);
+	border: 1px solid var(--texas-ok, #7fb069);
+}
+
+.txcf-error {
+	color: var(--texas-danger, #d95f4b);
+	border: 1px solid var(--texas-danger, #d95f4b);
+}

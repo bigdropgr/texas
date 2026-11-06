@@ -1,0 +1,115 @@
+.txc-calc {
+	max-width: 720px;
+}
+
+.txc-form {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: var(--texas-space-4, 16px);
+	background: var(--texas-surface, #211c17);
+	border: 1px solid var(--texas-border, #3a3128);
+	border-radius: var(--texas-radius-m, 12px);
+	padding: var(--texas-space-5, 24px);
+}
+
+@media (max-width: 720px) {
+	.txc-form {
+		grid-template-columns: 1fr;
+	}
+}
+
+.txc-field {
+	display: flex;
+	flex-direction: column;
+	gap: var(--texas-space-2, 8px);
+}
+
+.txc-field label {
+	font-size: 0.9rem;
+	color: var(--texas-text-muted, #b8ad9e);
+}
+
+.txc-field input,
+.txc-field select {
+	width: 100%;
+	background: var(--texas-surface-2, #2b241d);
+	border: 1px solid var(--texas-border, #3a3128);
+	border-radius: var(--texas-radius-s, 6px);
+	color: var(--texas-text, #f2ede6);
+	padding: var(--texas-space-3, 12px);
+	font: inherit;
+	font-variant-numeric: tabular-nums;
+}
+
+.txc-field input:focus,
+.txc-field select:focus {
+	border-color: var(--texas-accent, #e2622b);
+	outline: none;
+}
+
+.txc-input-unit {
+	position: relative;
+}
+
+.txc-input-unit .txc-unit {
+	position: absolute;
+	right: var(--texas-space-3, 12px);
+	top: 50%;
+	transform: translateY(-50%);
+	color: var(--texas-text-muted, #b8ad9e);
+	pointer-events: none;
+}
+
+.txc-actions {
+	grid-column: 1 / -1;
+}
+
+.txc-error {
+	grid-column: 1 / -1;
+	color: var(--texas-danger, #d95f4b);
+	margin: 0;
+}
+
+.txc-result {
+	margin-top: var(--texas-space-5, 24px);
+	background: var(--texas-surface-2, #2b241d);
+	border: 1px solid var(--texas-border, #3a3128);
+	border-left: 4px solid var(--texas-accent, #e2622b);
+	border-radius: var(--texas-radius-m, 12px);
+	padding: var(--texas-space-5, 24px);
+}
+
+.txc-result-list {
+	margin: 0;
+	display: grid;
+	gap: var(--texas-space-3, 12px);
+}
+
+.txc-result-list > div {
+	display: flex;
+	justify-content: space-between;
+	gap: var(--texas-space-4, 16px);
+	border-bottom: 1px solid var(--texas-border, #3a3128);
+	padding-bottom: var(--texas-space-3, 12px);
+}
+
+.txc-result-list dt {
+	color: var(--texas-text-muted, #b8ad9e);
+}
+
+.txc-result-list dd {
+	margin: 0;
+	font-weight: 600;
+	font-variant-numeric: tabular-nums;
+	text-align: right;
+}
+
+.txc-disclaimer {
+	margin: var(--texas-space-4, 16px) 0 0;
+	font-size: 0.875rem;
+	color: var(--texas-text-muted, #b8ad9e);
+}
+
+.txc-noscript {
+	color: var(--texas-warn, #e0a458);
+}
